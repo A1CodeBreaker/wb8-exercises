@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <title>Edit Todo</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="todo.html">Todo</a></li>
+        <li><a href="users.html">Users</a></li>
+        <li><a href="new-todo.html">New-Todo</a></li>
+        <li><a href="edit-todo.html">Edit-Todo </a></li>
+      </ul>
+    </nav>
+    <input type="number" id="todoIdInput" />
+    <button id="goBtn">Go</button>
+    <hr />
+
+    <p>
+      <label>Title</label><br />
+      <input id="title" type="text" />
+    </p>
+
+    <p>
+      <label>User ID</label><br />
+      <input id="userId" type="number" />
+    </p>
+
+    <p>
+      <input id="completed" type="checkbox" />
+      <label>Completed</label>
+    </p>
+
+    <p>
+      <button id="cancelBtn">Cancel</button>
+      <button id="updateBtn">Update</button>
+    </p>
+
+    <p id="message"></p>
+    <script src="scripts/edit-todo.js"></script>
+  </body>
+</html>
